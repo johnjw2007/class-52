@@ -1,0 +1,70 @@
+h1 {
+    color: white;
+}
+body{
+    background-image: url("http://www.zastavki.com/pictures/originals/2012/Backgrounds_Bright_background_035602_.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.header *{
+    margin: 30px;
+    border: solid;
+    padding: 30px;
+}
+.header{
+    background-color: rgba(68, 98, 143, 0.596);
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    margin-left: 30px;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: large;
+    margin: 100px;
+    padding: 80px;
+} 
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+p,h2{
+    text-align: center;
+}
+
+a:link{
+    color: rgb(240, 165, 27);
+}
+a:visited{
+    color: rgb(236, 27, 27);
+}
+.item{
+    position: relative;
+}
+.item p {
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+
+}
+
+.item:hover p {
+    opacity: 1;
+}
+
+.item:hover img{
+    opacity : 0.50
+}
